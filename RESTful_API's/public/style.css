@@ -1,0 +1,20 @@
+
+h1 {
+    color: rgb(194, 85, 21);
+}
+
+.post {
+    background-color: rgba(236, 14, 14, 0.346);
+}
+
+.peoples a {
+    text-decoration: none;
+}
+
+.peoples {
+    margin-bottom: 0.4rem;
+}
+
+.post a {
+    margin-right: 0.7rem;
+}

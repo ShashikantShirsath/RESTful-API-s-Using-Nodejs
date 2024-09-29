@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit details</title>
+</head>
+<body>
+    <h1>Edit the Post</h1>
+    <p>User id : <%= user.id %></p>
+    <h2>Username : <%= user.username %></h2>
+    <form method="post" action="/instagram/<%= user.id %>?_method=PATCH">
+        <textarea name="caption" rows="5" cols="20"><%= user.caption %></textarea>
+        <p>Following : <input type="text" name="following" value="<%= user.following %>"></p>
+        <p>Followers : <input type="text" name="followers" value=" <%= user.followers %>"></p>
+        <button>Update</button>
+    </form>
+</body>
+</html>
